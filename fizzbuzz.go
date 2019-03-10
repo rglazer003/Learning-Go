@@ -19,6 +19,7 @@ func main() {
 	}
 	exp()
 	userInput()
+	tester()
 }
 func exp() {
 	fmt.Println("And that's fizzbuzz!")
