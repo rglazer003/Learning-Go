@@ -5,7 +5,7 @@ import "strconv"
 
 func main() {
 	for i := 1; i <= 100; i++ {
-		var hold string = ""
+		var hold string
 		if i%3 == 0 {
 			hold += "Fizz"
 		}
@@ -16,5 +16,9 @@ func main() {
 			hold = strconv.Itoa(i)
 		}
 		fmt.Println(hold)
+		exp()
 	}
+}
+func exp() {
+	fmt.Println("And that's fizzbuzz!")
 }
