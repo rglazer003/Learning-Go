@@ -16,9 +16,18 @@ func main() {
 			hold = strconv.Itoa(i)
 		}
 		fmt.Println(hold)
-		exp()
 	}
+	exp()
+	userInput()
 }
 func exp() {
 	fmt.Println("And that's fizzbuzz!")
+}
+func userInput() {
+	fmt.Println("What number would you like to see the square of?")
+	var number int
+	fmt.Scan(&number)
+	var result = number * number
+	fmt.Printf("%v squared is %v", number, result)
+	fmt.Println()
 }
