@@ -1,7 +1,10 @@
 package main
 
-import "fmt"
-import "strconv"
+import (
+	"fmt"
+	"strconv"
+	"time"
+)
 
 func main() {
 	for i := 1; i <= 100; i++ {
@@ -18,6 +21,8 @@ func main() {
 		fmt.Println(hold)
 	}
 	exp()
+	fmt.Println("You should now have a 2 second pause before the code resumes")
+	time.Sleep(2000 * time.Millisecond)
 	userInput()
 	tester()
 }
